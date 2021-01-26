@@ -35,7 +35,7 @@ To get all the routes in the app, run the command `rails routes`
 
     class HomeController < ApplicationController
 
-    	# 	...
+      # 	...
       
       def about
       end
