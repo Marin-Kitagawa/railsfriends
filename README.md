@@ -83,7 +83,7 @@ Adding a `gem` in the `GemFile`
     # We won't use the '=' sign while we are dealing with loops such as for etc.
     ```
 
-# Link To tags
+# `link_to` tag
 
 To link to a specific route in RoR, we use the `link_to` tag. It is used as follows:
 
