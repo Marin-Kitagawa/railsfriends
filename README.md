@@ -37,7 +37,7 @@ To get all the routes in the app, run the command `rails routes`
 
     	# 	...
       
-    	def about
+      def about
       end
       
     end
