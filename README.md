@@ -25,7 +25,7 @@ root 'home#index'
 
 To get all the routes in the app, run the command `rails routes`
 
-# Creating a controlled MANUALLY
+# Creating a controller MANUALLY
 
 1. Create a file (say, `about.html.erb`) with extension `.erb` and save it in the `home` folder (because we created `home/index`
 2. The in the `home_controller.rb` file, create a function (similar to `[views.py](http://views.py)` file in `django`) (say, `about`)
