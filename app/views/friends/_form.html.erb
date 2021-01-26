@@ -11,32 +11,32 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :first_name %>
-    <%= form.text_field :first_name %>
+  <div class="field form-group">
+    <b><%= form.label :first_name %></b>
+    <%= form.text_field :first_name, class:"form-control", placeholder:"Cookie" %>
+  </div>
+  
+  <div class="field form-group">
+    <b><%= form.label :last_name %></b>
+    <%= form.text_field :last_name, class:"form-control", placeholder:"Cream" %>
   </div>
 
-  <div class="field">
-    <%= form.label :last_name %>
-    <%= form.text_field :last_name %>
+  <div class="field form-group"></b>
+    <b><%= form.label :email %>
+    <%= form.text_field :email, class:"form-control", placeholder:"example@domain.com" %>
   </div>
 
-  <div class="field">
-    <%= form.label :email %>
-    <%= form.text_field :email %>
+  <div class="field form-group"></b>
+    <b><%= form.label :phone %>
+    <%= form.text_field :phone, class:"form-control", placeholder:"(000) 111-2222" %>
   </div>
 
-  <div class="field">
-    <%= form.label :phone %>
-    <%= form.text_field :phone %>
-  </div>
-
-  <div class="field">
-    <%= form.label :twitter %>
-    <%= form.text_field :twitter %>
+  <div class="field form-group"></b>
+    <b><%= form.label :twitter %>
+    <%= form.text_field :twitter, class:"form-control", placeholder:"twitter_id" %>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit class:"btn btn-primary" %>
   </div>
 <% end %>
