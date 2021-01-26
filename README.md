@@ -360,3 +360,20 @@ To link to a specific route in RoR, we use the `link_to` tag. It is used as foll
     2. Deleting `Show` and `Edit` buttons
     3. Including delete buttons in `Show` Page and in `Edit` page
     4. Making the show functionality in the First name + Last Name
+    
+    # Database modification for production environment
+
+        RoR comes with `sqlite3` for development. But it is not suitable for production. So, we have to change it to something like `postgres`. So, from `[rubygems.org]         (http://rubygems.org)` add the `pg` gem to the gem file in the group `production` (if the group doesn't exist, create one).
+
+        Then `bundle install --without production` (because production gems will be installed by the hosting platform (eg. Heroku)
+
+        # Deploying in Heroku
+
+        1. First create an account in Heroku
+        2. Download the Heroku Toolbelt (CLI)
+        3. Run the following commands
+
+        ```ruby
+        heroku login
+        heroku create
+        heroku rename -a <current_app_name> <new_app_name> # Optional
