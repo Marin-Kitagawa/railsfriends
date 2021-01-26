@@ -33,9 +33,13 @@
 
   <div class="field form-group"></b>
     <b><%= form.label :twitter %>
-    <%= form.text_field :twitter, class:"form-control", placeholder:"twitter_id" %>
+    <%= form.text_field :twitter, class:"form-control", placeholder:"Twitter ID" %>
   </div>
-
+  <div class="field form-group"></b>
+    <b><% form.label :user_id %>
+    <%= form.number_field :user_id, class:"form-control", value: current_user.id, type: :hidden %>
+    <%# current_user.inspect %>
+  </div>
   <div class="actions">
     <%= form.submit class:"btn btn-primary" %>
   </div>
