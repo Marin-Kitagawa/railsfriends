@@ -144,7 +144,7 @@ To link to a specific route in RoR, we use the `link_to` tag. It is used as foll
 
     # Devise gem and User Management
 
-    Go to [Ruby Gems](https://www.rubygems.org) and add `devise` gem to `GemFile` (one with the highest number of downloads $(> 89\text{ M})$
+    Go to [Ruby Gems](https://www.rubygems.org) and add `devise` gem to `GemFile` (one with the highest number of downloads > 89 M)
 
     Then run the command
 
